@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, Arial, sans-serif;
+  box-sizing: border-box;
+  /* border: 1px solid red; */
+}
+
+body {
+  padding-left: 5%;
+  padding-top: 5%;
+  /* background-color: #f0f2f5; */
+  background-color: beige;
+  position: relative;
+  height: 115vh;
+  overflow-x: hidden;
+}
+
+/* p {
+    font-size: 15px;
+    position: absolute;
+    bottom: -55px;
+  } */
+
+h1 {
+  color: red;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+  <!--
+    Implement AngularJS Routing and AngularJS Controllers
+-->
+
+  <head>
+    <title>Termwork 5</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+  </head>
+
+  <body ng-app="myApp">
+    <a href="#!link1">Link 1</a>
+    <a href="#!link2">Link 2</a>
+    <a href="#!link3">Link 3</a>
+
+    <div ng-view></div>
+  </body>
+
+  <script>
+    const app = angular.module("myApp", ["ngRoute"]);
+    app.config(($routeProvider) => {
+      $routeProvider
+        .when("/link1", {
+          template: "<h3>I am Bigger!</h3>",
+        })
+        .when("/link2", {
+          template: "<h2>I am Bigger than you!</h2>",
+        })
+        .when("/link3", {
+          template: "<h1>I am Bigger than both of you!</h1>",
+        });
+    });
+  </script>
+</html>
